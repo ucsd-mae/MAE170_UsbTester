@@ -11,6 +11,6 @@ Tester runs a canned sequence where it commands the heat transfer apparatus to a
 
 ## Known Issues
 - RAMBo
--- Sometimes it may require 2 attempts to connect to the RAMBo. This is due to an errant serial character transmitted to the RAMBo that causes RAMBo to respond with  `echo:Unknown command: "�M115"`. I have tried to mitigate this with clearing SerialHost rx/tx buffers but have not fully fixed it.
+  - Sometimes it may require 2 attempts to connect to the RAMBo. This is due to an errant serial character transmitted to the RAMBo that causes RAMBo to respond with  `echo:Unknown command: "�M115"`. I have tried to mitigate this with clearing SerialHost rx/tx buffers but have not fully fixed it.
 - Heat Transfer
--- The currently installed version of code on the Heat Transfer setup does not fully reset the state of the heat transfer between runs. If the arduino is not given a hard reset, every run after the first run (post reset) will be limited to lowering the lamp, turning on the lamp, immediately turning off the lamp and reporting the current temperature. This provides all information needed to assess the functionality of the Heat Transfer setup, so I haven't planned to flash them all with an update for this edge case.
+  - The currently installed version of code on the Heat Transfer setup does not fully reset the state of the heat transfer between runs. If the arduino is not given a hard reset, every run after the first run (post reset) will be limited to lowering the lamp, turning on the lamp, immediately turning off the lamp and reporting the current temperature. This provides all information needed to assess the functionality of the Heat Transfer setup, so I haven't planned to flash them all with an update for this edge case.
