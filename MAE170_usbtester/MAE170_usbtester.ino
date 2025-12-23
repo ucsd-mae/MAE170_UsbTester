@@ -23,17 +23,17 @@ Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
 Adafruit_USBH_CDC SerialHost;
 
 // Define button pins... just for RP2040 feather
-#define BUTTON_A  9
-#define BUTTON_B  6
-#define BUTTON_C  5
+const unsigned int BUTTON_A  = 9;
+const unsigned int BUTTON_B  = 6;
+const unsigned int BUTTON_C  = 5;
 
 //Cursor locations to put text inline with buttons
-const unsigned int BUTTON_A_X 0
-const unsigned int BUTTON_A_Y 8
-const unsigned int BUTTON_B_X 0
-const unsigned int BUTTON_B_Y 27
-const unsigned int BUTTON_C_X 0
-const unsigned int BUTTON_C_Y 45
+const unsigned int BUTTON_A_X = 0;
+const unsigned int BUTTON_A_Y = 8;
+const unsigned int BUTTON_B_X = 0;
+const unsigned int BUTTON_B_Y = 27;
+const unsigned int BUTTON_C_X = 0;
+const unsigned int BUTTON_C_Y = 45;
 //Timing constants
 const int MENU_DWELL_MS = 1500;
 const int BUTTON_DWELL_MS = 200;
